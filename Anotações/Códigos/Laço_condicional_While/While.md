@@ -20,3 +20,5 @@ do {
 } while (condição);
 ```
 . Exemplos em outro arquivo.
+
+# Cuidado com o loop infinito !!!!!!!
