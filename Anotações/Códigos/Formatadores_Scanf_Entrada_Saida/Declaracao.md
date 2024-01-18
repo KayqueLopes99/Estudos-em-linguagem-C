@@ -1,3 +1,10 @@
+## Varíaveis e atribuição de dados
+. Para armazenar dados é preciso usar varíaveis e declarar elas.
+. Sintaxe:
+- <Tipo><nome>;
+. Não pode espaço, caracteres especiais e númros na primeira posição.
+. Pode Letras, '_' e némeros.
+
 ## Tipos de declaração
 ## Sintaxe: tipo variavel;
 # Char: 
@@ -68,4 +75,29 @@ void minhaFuncao3(int x) {
 int minhaFuncao4(int x) {
     printf("função com parâmetros e com valor de retorno. x é %d.\n", x);
     return x;
-}
+
+
+# Obsevações:
+. short int e long int servem para armazenar números inteiros com diferentes quantidades de memória.
+
+. short int
+- Este é um tipo de dado que usa menos memória do que um int. 
+    ```c
+    short int a; // 2 bytes de memória.
+    ```
+
+. long int: Este é um tipo de dado que usa mais memória do que um int.
+    ```c
+    long int b; // 4 bytes de memória
+    ```
+
+# O define 
+. #define. 
+- Definimos um valor para uma varíavel nome_macho.
+. A sintaxe:
+```c
+#define nome_macro sequência_de_caracteres
+```
+```c
+#define MAX 1000 // no maxímo 1000
+```
