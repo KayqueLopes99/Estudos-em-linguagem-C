@@ -39,3 +39,12 @@ int main() {
     printf("O valor de num é: %u\n", num);
     return 0;
 }
+
+## Usigned long long
+. unsigned long long: para armazenar valores inteiros positivos grandes.
+. Sintaxe: unsigned long long int var;
+
+## long
+. É um modificador para aumentar a faixa e o tamanho dos valores que suas variáveis podem armazenar. 
+- Sintaxe: long int var;
+    
