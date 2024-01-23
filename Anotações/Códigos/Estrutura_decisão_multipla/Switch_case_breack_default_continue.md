@@ -24,15 +24,14 @@ A sintaxe é a seguinte:
     switch (expressão) {
         case valor1:
             // declarações
-            break;
+            breack;
         case valor2:
             // declarações
-            break;
+            breack;
         ...
         default:
             // declarações padrão
     }
-    ```
 
 # Case(caso) 
 - vários blocos de código que podem ser executados.
