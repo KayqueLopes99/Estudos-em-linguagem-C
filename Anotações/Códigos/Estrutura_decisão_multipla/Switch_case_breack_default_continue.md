@@ -42,7 +42,7 @@ A sintaxe é a seguinte:
 . Definir um bloco de código que será executado se nenhum dos case
 corresponder ao valor da expressão no `switch`.
 # Continue(continuar)
-. É usado para pular a iteração atual do loop e continuar com a próxima iteração.
+. É usado para pular a interação atual do loop e continuar com a próxima interação.
 - Exemplo no For:
 #include <stdio.h>
 #include <locale.h>

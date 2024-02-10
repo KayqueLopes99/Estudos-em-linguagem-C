@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/kaiqu/OneDrive/Imagens/Estudos-em-linguagem-C/Anotações/Códigos/Laço_condicional_While",
-      "program": "c:/Users/kaiqu/OneDrive/Imagens/Estudos-em-linguagem-C/Anotações/Códigos/Laço_condicional_While/build/Debug/outDebug",
+      "cwd": "c:/Users/kaiqu/OneDrive/Imagens/Estudos-em-linguagem-C/Anotações/Códigos/Estrutura_decisão_multipla",
+      "program": "c:/Users/kaiqu/OneDrive/Imagens/Estudos-em-linguagem-C/Anotações/Códigos/Estrutura_decisão_multipla/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
