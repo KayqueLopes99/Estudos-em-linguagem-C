@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 
-// FunÁ„o para calcular o maior entre dois n˙meros
+// Fun√ß√£o para calcular o maior entre dois nÔøΩmeros
 float maior(float num1, float num2) {
     if (num1 > num2)
         return num1;
@@ -9,20 +9,20 @@ float maior(float num1, float num2) {
         return num2;
 }
 
-// FunÁ„o principal
+// Fun√ß√£o principal
 int main() {
     float x, y, m;
 
-    // Configurando a localizaÁ„o para suportar caracteres acentuados
+    // Configurando a localiza√ß√£o para suportar caracteres acentuados
     setlocale(LC_ALL, "Portuguese");
 
-    // Solicitando ao usu·rio que insira dois valores
+    // Solicitando ao usu√°rio que insira dois valores
     printf("Insira um valor:\n");
     scanf("%f", &x);
     printf("Insira outro valor:\n");
     scanf("%f", &y);
 
-    // Chamando a funÁ„o maior() para obter o maior valor
+    // Chamando a fun√ß√£o maior() para obter o maior valor
     m = maior(x, y);
 
     // Exibindo o maior valor com duas casas decimais
