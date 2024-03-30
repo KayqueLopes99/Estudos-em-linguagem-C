@@ -4,36 +4,35 @@
 
 #define N 50
 
-int main()
-{
-    // ConfiguraÁ„o da localizaÁ„o para suportar caracteres acentuados
+int main() {
+    // Configura√ß√£o da localiza√ß√£o para suportar caracteres acentuados
     setlocale(LC_ALL, "Portuguese");
 
-    // DeclaraÁ„o de uma string e uma vari·vel inteira
+    // Declara√ß√£o de uma string e uma vari√°vel inteira
     char s[N];
     int i;
 
-    // Solicita ao usu·rio que digite um texto
+    // Solicita ao usu√°rio que digite um texto
     printf("Digite um texto:\n");
 
-    // ObtÈm a entrada do usu·rio usando gets (cuidado: gets È considerada insegura)
+    // Obt√©m a entrada do usu√°rio usando gets (cuidado: gets √© considerada insegura)
     gets(s);
 
-    // Calcula o tamanho da string usando a funÁ„o strlen
+    // Calcula o tamanho da string usando a fun√ß√£o strlen
     i = strlen(s);
 
     // Exibe o tamanho do texto inserido
     printf("\nTamanho do texto: %d\n\n", i);
 
-    // Impress„o de posiÁ„o a posiÁ„o
-    printf("Impress„o de posiÁ„o a posiÁ„o:\n");
+    // Impress√£o de posi√ß√£o a posi√ß√£o
+    printf("Impress√£o de posi√ß√£o a posi√ß√£o:\n");
 
     // Loop para percorrer a string e imprimir caractere por caractere
     for (i = 0; i < strlen(s); i++) {
         printf("%c", s[i]);
     }
 
-    // Nova linha para melhor formataÁ„o
+    // Nova linha para melhor formata√ß√£o
     printf("\n");
 
     return 0;

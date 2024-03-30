@@ -6,14 +6,14 @@
 
 int main()
 {
-    // Configuração da localização para suportar caracteres acentuados
+    // ConfiguraÃ§Ã£o da localizaÃ§Ã£o para suportar caracteres acentuados
     setlocale(LC_ALL, "Portuguese");
 
-    // Definição de duas strings
-    char s1[N] = {"Lógica de"};
-    char s2[N] = {" Programação!"};
+    // DefiniÃ§Ã£o de duas strings
+    char s1[N] = {"Lï¿½gica de"};
+    char s2[N] = {" ProgramaÃ§Ã£o!"};
 
-    // Exibe as strings antes de utilizar a função strcat
+    // Exibe as strings antes de utilizar a funÃ§Ã£o strcat
     printf("Antes do strcat:\n");
     printf("str1: %s\n", s1);
     printf("str2: %s\n", s2);
@@ -21,7 +21,7 @@ int main()
     // Concatena s2 ao final de s1
     strcat(s1, s2);
 
-    // Exibe a string resultante após utilizar a função strcat
+    // Exibe a string resultante apos utilizar a funÃ§Ã£o strcat
     printf("Depois do strcat:\n");
     puts(s1);  // Exibe a string s1
 

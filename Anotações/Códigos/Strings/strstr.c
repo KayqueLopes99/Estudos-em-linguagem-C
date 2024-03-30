@@ -2,19 +2,19 @@
 #include <string.h>
 
 int main() {
-    // Lista de PokÈmon
+    // Lista de Pok√©mon
     char listaPokemon[] = "Bulbasaur Charmander Pikachu Squirtle";
 
-    // PokÈmon que queremos verificar
+    // Pok√©mon que queremos verificar
     char pokemonBuscado[] = "Pikachu";
 
-    // Verifica se o PokÈmon est· na lista
+    // Verifica se o Pok√©mon est√° na lista
     char *resultado = strstr(listaPokemon, pokemonBuscado);
 
     if (resultado != NULL) {
-        printf("Encontrou o PokÈmon: %s\n", resultado);
+        printf("Encontrou o Pok√©mon: %s\n", resultado);
     } else {
-        printf("N„o encontrou o PokÈmon.\n");
+        printf("N√£o encontrou o Pok√©mon.\n");
     }
 
     return 0;
