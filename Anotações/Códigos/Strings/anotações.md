@@ -321,3 +321,32 @@ void adicionaCliente(int *q)
 ```
 
 - Neste código, `strcspn(Aux.nome, "0123456789")` retorna o número de caracteres iniciais em `Aux.nome` que não são números.
+
+## strlen
+A sintaxe:
+
+```c
+size_t strlen(const char *str);
+```
+- `str`: é a string cujo comprimento você deseja calcular.
+
+- A função `strlen` retorna o número de caracteres na string `str`, excluindo o caractere nulo de terminação (`'\0'`).
+
+
+```c
+#include <string.h>
+#include <stdio.h>
+
+int main() {
+    const char *str = "Hello";
+    size_t length;
+
+    length = strlen(str);
+
+    printf("O comprimento da string '%s' é %zu.\n", str, length);
+
+    return 0;
+}
+```
+
+- Quando você executa este código, ele imprimirá: `O comprimento da string 'Hello' é 5.`
