@@ -262,3 +262,62 @@ char texto[] = "Olá, mundo!";
 char *substr = strstr(texto, "mundo");
 printf("%s\n", substr);  // Saída: mundo!
 ```
+
+## strcspn
+
+```c
+size_t strcspn(const char *str1, const char *str2);
+```
+
+- `str1`: é a string na qual a função procura o segmento.
+- `str2`: é a string que contém o conjunto de caracteres a serem correspondidos.
+
+
+- Verificar se o nome do cliente contém algum número:
+
+```c
+void adicionaCliente(int *q)
+{
+    // Obrigatoriamente, o primeiro digito do nome deve ser maiusculo, implementar mais tarde
+    struct cliente Aux;
+    FILE *arquivo;
+    arquivo = fopen("../Dados/DadosClientes.txt", "a");
+    if (arquivo == NULL)
+    {
+        printf("Erro ao abrir o arquivo para escrita.\n");
+        return;
+    }
+
+    // Loop para verificar o nome
+    do
+    {
+        printf("Digite o nome do cliente: \n");
+        scanf(" %[^\n]", Aux.nome);
+        if (strcspn(Aux.nome, "0123456789") == strlen(Aux.nome))
+        {
+            break;
+        }
+        else
+        {
+            printf("Nome invalido. O nome não deve conter números.\n");
+        }
+    } while (1);
+
+    // Solicita o e-mail
+    printf("Digite o e-mail: \n");
+    scanf(" %[^\n]", Aux.email);
+    if (strstr(Aux.email, "@") != NULL && (strstr(Aux.email, "hotmail.com") || strstr(Aux.email, "gmail.com")))
+    {
+        fprintf(arquivo, "%s\t%s\n", Aux.nome, Aux.email);
+        (*q)++;
+    }
+    else
+    {
+        printf("E-mail invalido. O e-mail deve conter @ e também hotmail.com ou gmail.com.\n");
+    }
+
+    fclose(arquivo);
+}
+```
+
+- Neste código, `strcspn(Aux.nome, "0123456789")` retorna o número de caracteres iniciais em `Aux.nome` que não são números.
