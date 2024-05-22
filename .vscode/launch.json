@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/kaiqu/OneDrive/Imagens/Estudos-em-linguagem-C/Anotações/Códigos/Strings",
-      "program": "c:/Users/kaiqu/OneDrive/Imagens/Estudos-em-linguagem-C/Anotações/Códigos/Strings/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

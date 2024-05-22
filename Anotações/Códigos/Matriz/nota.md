@@ -2,7 +2,7 @@
 - Explicação: É uma estrutura de dados que armazena elementos em linhas e colunas.
 
 - Sintaxe:
--     tipo nome_matriz[linhas][colunas];
+- tipo nome_matriz[linhas][colunas];
 
 - Acesso aos elementos:
 - Exemplo:
@@ -23,8 +23,9 @@ Inicialização: // Caso você queira já definir os valores da matriz.
 - Exemplo:
 
 ``` c
-  for (int i = 0; i < linhas; i++) {
-        for (int j = 0; j < colunas; j++) {
+int i,j;
+  for (i = 0; i < linhas; i++) {
+        for (j = 0; j < colunas; j++) {
         printf("%d ", matriz[i][j]);
         }
         printf("\n");
@@ -34,10 +35,10 @@ Inicialização: // Caso você queira já definir os valores da matriz.
 ``` c
 #include <stdio.h>
 
-
 int main(void){
 	int matriz[3][3];
-	int i,j, num =1;
+	int i,j;
+  int num =1;
 	
   for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {

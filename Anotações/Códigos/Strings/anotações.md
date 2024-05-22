@@ -1,5 +1,4 @@
-# String
-
+# Strin
 - Em C, uma string é uma sequência de caracteres terminada por um caractere nulo (`\0`). 
 - A string é representada como um array de caracteres.
 
@@ -15,7 +14,6 @@ char minha_string[50];
 
 ````
 
-
 ## Inicializar:
 - o momento da declaração:
 ````c
@@ -30,7 +28,6 @@ strcpy(minha_string, "Olá, mundo!");
 
 
 ## Leitura:
-
 - Para ler
 ````c
 char minha_string[50];
@@ -71,10 +68,8 @@ int main() {
 ```
 
 ### sscanf:
-
-A função é usada para ler dados formatados de uma string.
-
-A sintaxe:
+- A função é usada para ler dados formatados de uma string.
+- A sintaxe:
 
 ```c
 int sscanf(nome_string, "Formatação %", veriaveis, &varoaveis);
@@ -84,7 +79,6 @@ int sscanf(nome_string, "Formatação %", veriaveis, &varoaveis);
 
 ```c
 #include <stdio.h>
-
 int main() {
     char *str = "Tom Gerente 28";
     char nome[10], cargo[10];
@@ -101,7 +95,6 @@ int main() {
 
 
 ## Puts:
-
 - A função é usada para imprimir uma string na tela.
 - Adiciona \n no fluxo de saída. 
 - Exemplo:
@@ -117,7 +110,6 @@ int main() {
 ```
 
 ## Fgets:
-
 - A função permite que você especifique o número máximo de caracteres a serem lidos, incluindo o caractere nulo ('\0').
 
 - Sintaxe:
@@ -140,8 +132,6 @@ int main() {
 ## Posição:
 - Em C, as queridas são armazenadas como arrays de caracteres.
 - Cada caractere em uma string tem uma posição específica no array, começando por 0. 
-
-
 - Por exemplo:
 
 ```c
@@ -149,14 +139,12 @@ char minha_string[] = "Olá";
 ```
 
 - Posição:
-
 - `minha_string[0]` é `'O'`
 - `minha_string[1]` é `'l'`
 - `minha_string[2]` é `'á'`
-- `minha_string[3]` é `'\0'` // final
+- `minha_string[3]` é `'\0'` -> final
 
-Note que a posição final em uma string sempre contém o caractere nulo (`'\0'`), que indica o final da string.
-
+- Note que a posição final em uma string sempre contém o caractere nulo (`'\0'`), que indica o final da string.
 - Acessar ou modificar caracteres individuais em uma string usando sua posição. 
 
 ```c
@@ -170,33 +158,6 @@ int main() {
     return 0;
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Manipulação de strings em C
 
 - A biblioteca `string.h` que contém várias funções para manipular strings.
@@ -264,15 +225,12 @@ printf("%s\n", substr);  // Saída: mundo!
 ```
 
 ## strcspn
-
 ```c
 size_t strcspn(const char *str1, const char *str2);
 ```
 
 - `str1`: é a string na qual a função procura o segmento.
 - `str2`: é a string que contém o conjunto de caracteres a serem correspondidos.
-
-
 - Verificar se o nome do cliente contém algum número:
 
 ```c
@@ -348,5 +306,4 @@ int main() {
     return 0;
 }
 ```
-
 - Quando você executa este código, ele imprimirá: `O comprimento da string 'Hello' é 5.`

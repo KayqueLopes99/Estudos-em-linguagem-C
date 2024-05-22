@@ -1,7 +1,6 @@
 ### Linaguagem C!
 - É uma linguagem de programação compilada de propósito geral,
-estrturada, criada em 1972 para desenvolver o sistema opera-
-cional Unix.
+estrturada, criada em 1972 para desenvolver o sistema operacional Unix.
 - Multiplataforma e Desempenho.
 - É uma linguagem usada para todo tipo de projeto.
 - O programa pode ser inscrito em qualquer plataforma que o comporte.

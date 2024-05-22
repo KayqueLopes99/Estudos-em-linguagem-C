@@ -55,3 +55,4 @@ time(): Retorna a data e hora do sistema e atribui esse valor à variável passa
 
 ## A biblioteca windows.h
 - Específica do Windows que contém declarações para todas as funções do Windows e todos os tipos de dados utilizados pelas várias funções e subsistemas.
+

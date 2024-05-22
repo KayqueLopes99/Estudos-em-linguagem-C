@@ -2,6 +2,7 @@
 # Swich(escolha) 
 - Executar um bloco de código entre várias alternativas.
 . Sintaxe:
+```` c
 - swith(<var>){
     case<v1>:
     <comandos>
@@ -16,10 +17,11 @@
     <finalizar>
     breack;
 }
-
+```` 
 Ou 
 
-A sintaxe é a seguinte:
+- A sintaxe é a seguinte:
+```` c
     ```c
     switch (expressão) {
         case valor1:
@@ -32,10 +34,10 @@ A sintaxe é a seguinte:
         default:
             // declarações padrão
     }
-
+````
 # Case(caso) 
 - vários blocos de código que podem ser executados.
-# Breack(pare) 
+# Break(pare) 
 - Finalizar o camando.
 - terminar imediatamente.
 # Default(outrocaso) 
@@ -44,6 +46,7 @@ corresponder ao valor da expressão no `switch`.
 # Continue(continuar)
 . É usado para pular a interação atual do loop e continuar com a próxima interação.
 - Exemplo no For:
+````c 
 #include <stdio.h>
 #include <locale.h>
 
@@ -61,9 +64,11 @@ int main()
 		printf("%d ", i);
 	}
 }
-## Sobre o breack 
+````
+
+## Sobre o break 
 - Também com os comandos de loop for , while e do...while.
-. No for:
+```` c
 #include <stdio.h>
 int main() {
   int i;
@@ -75,4 +80,4 @@ int main() {
   }
   return 0;
 }
-
+````

@@ -4,15 +4,18 @@
 - Ele também pode ser usado para retorno a um valor.
 
 # Sintaxe:
-- return expressão;
+``` c
+return expressão;
+```
 A expressão é o valor que você deseja retornar.
 
 # Funções:
-. return 1: indica que ocorreu algum erro durante a execução do programa.
-. return 0: indica que o programa foi executado com sucesso.
-. return operacao: operacao é uma expressão ou valor que você deseja que a função retorne. 
+- return `1`: indica que ocorreu algum erro durante a execução do programa.
+- return `0`: indica que o programa foi executado com sucesso.
+- return `operacao`: operacao é uma expressão ou valor que você deseja que a função retorne. 
 
 # Exemplo: 
+``` c
 - #include <stdio.h>
 // Função que retorna a soma.
 int soma(int a, int b) {
@@ -27,6 +30,6 @@ int main() {
         return 1;  // erro.
     }
 }
-
+```
 # Funcionalidade
 - O comando permite que as funções retornem valores e encerrem sua execução quando necessário.

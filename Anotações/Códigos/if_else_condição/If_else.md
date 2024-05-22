@@ -1,8 +1,7 @@
 # If (se) e Else (senão)
-. É um controle de fluxo de condições. 
-. Sintaxe:
-. A sintaxe básica
-. para if é:
+- É um controle de fluxo de condições.
+- Sintaxe:
+- A sintaxe para if é:
 ```c
 if (condição) {
     // instruções para condição verdadeira
@@ -23,7 +22,7 @@ if (condição) {
 
 # Observações
 . A sintaxe básica para if...else if...else:
-
+````c
 if (condição1) {
     // instruções para condição1 verdadeira
 } else if (condição2) {
@@ -31,5 +30,5 @@ if (condição1) {
 } else {
     // instruções para todas as condições falsas
 }
-
+````
 . Exemplo está em Exemplo2.c

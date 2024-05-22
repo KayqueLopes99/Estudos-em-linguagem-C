@@ -1,7 +1,7 @@
 # Funções 
 ## Definição:
 - Uma função é um bloco de código que realiza uma tarefa específica.
-- Uma função ajuda a modularizar o programa e aumentar a reutilização do código.
+- Modularizar o programa e aumentar a reutilização do código.
 
 ## Sintaxe
 ```c
@@ -24,12 +24,12 @@ int soma(int num1, int num2) {
 ```
 
 ## Função com Vetor
-
 Uma função pode receber um vetor como parâmetro.
 ```c
 int soma_vetor(int vetor[], int tamanho) {
     int soma = 0;
-    for(int i = 0; i < tamanho; i++) {
+    int i;
+    for(i = 0; i < tamanho; i++) {
         soma += vetor[i];
     }
     return soma;
@@ -42,7 +42,8 @@ Da mesma forma, uma função pode receber uma matriz como parâmetro.
 ```c
 int soma_matriz(int matriz[3][3]) {
     int soma = 0;
-    for(int i = 0; i < 3; i++) {
+    int i;
+    for(i = 0; i < 3; i++) {
         for(int j = 0; j < 3; j++) {
             soma += matriz[i][j];
         }

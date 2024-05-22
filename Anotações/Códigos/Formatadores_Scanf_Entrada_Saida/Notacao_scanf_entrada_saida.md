@@ -31,3 +31,7 @@ scanf("%100[^\n]", palavras);
 . scanf também pode ser usado para ler vários valores de uma vez.
 - int a, b;
 scanf("%d %d", &a, &b);
+
+- Podemos colocar quantos caracteres no maximo podemos ler, tipo em caso de validação de entrada com letras.
+- Colocamos quando uma string[100]
+- scanf("%99s", entrada);

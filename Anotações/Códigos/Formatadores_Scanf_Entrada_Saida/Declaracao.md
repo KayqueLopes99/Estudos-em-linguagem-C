@@ -1,30 +1,38 @@
-## Varíaveis e atribuição de dados
-. Para armazenar dados é preciso usar varíaveis e declarar elas.
-. Sintaxe:
+# Varíaveis e atribuição de dados
+- Para armazenar dados é preciso usar varíaveis e declarar elas.
+- Sintaxe:
 - <Tipo><nome>;
-. Não pode espaço, caracteres especiais e númros na primeira posição.
-. Pode Letras, '_' e némeros.
+- Não pode espaço, caracteres especiais e númros na primeira posição.
+- Pode Letras, '_' e números.
 
 ## Tipos de declaração
 ## Sintaxe: tipo variavel;
 # Char: 
 - Este tipo é usado para armazenar um único caractere.
 - Exemplo:
+``` c
     char letra = 'A'; // char letra;
+``` 
 # Int:
 - Este tipo é usado para armazenar um número inteiro. 
 - Exemplo:
+``` c
     int numero = 10; // int numero;
+```
 # Float: 
 - Este tipo é usado para armazenar um número real. 
+- Formatar, Usar %.2f. 
 - Exemplo:
+``` c
     float salario = 1234.56; // float salario;
+```
 # Double: 
 - Este tipo é usado para armazenar um número real com precisão maior que float. 
 - Dobro da capacidade.
 - Exemplo:
+``` c
     double pi = 3.141592653589793; // double pi;
-
+```
 # void:
 - Este é um tipo especial que indica:
 - Não existencia de um tipo associado ao objeto correspondente.
@@ -39,7 +47,8 @@
 . Valor de retorno da função:
 - Indicar que uma função não retorna nenhum valor. 
 - Útil quando a função realiza a execução, mas não precisa retornar a nada.
-- #include <stdio.h>
+``` c 
+#include <stdio.h>
 
 // Uma função que não retorna valor
 void imprimirMensagem(void) {
@@ -51,11 +60,11 @@ int main(void) {
     imprimirMensagem();
     return 0;
 }
+```
 
-.  int main(void) é uma função que não aceita argumentos e retorna um valor inteiro. 
-
-Exemplo:
-- // Função sem parâmetros e sem valor de retorno
+- Exemplo:
+``` c
+// Função sem parâmetros e sem valor de retorno
 void minhaFuncao1(void) {
     printf("função sem parâmetros e sem valor de retorno.\n");
 }
@@ -75,29 +84,31 @@ void minhaFuncao3(int x) {
 int minhaFuncao4(int x) {
     printf("função com parâmetros e com valor de retorno. x é %d.\n", x);
     return x;
+```
 
-
-# Obsevações:
-. short int e long int servem para armazenar números inteiros com diferentes quantidades de memória.
-
-. short int
-- Este é um tipo de dado que usa menos memória do que um int. 
-    ```c
-    short int a; // 2 bytes de memória.
-    ```
-
-. long int: Este é um tipo de dado que usa mais memória do que um int.
-    ```c
-    long int b; // 4 bytes de memória
-    ```
-
-# O define 
-. #define. 
-- Definimos um valor para uma varíavel nome_macho.
+# O #define 
+- Definimos um valor para uma varíavel nome_macro.
 . A sintaxe:
 ```c
 #define nome_macro sequência_de_caracteres
 ```
 ```c
 #define MAX 1000 // no maxímo 1000
+```
+# %[^\n]: 
+- Na função scanf lê uma sequência de caracteres até encontrar um caractere de nova linha (\n).
+- Exemplo:
+```c
+#include <stdio.h>
+
+int main(void){
+char pessoa[100];
+
+printf("Qual e seu nome querido(A)?\n");
+scanf("%[^\n]", pessoa);
+
+printf("Bem vindo querido %s ao mundo Otaku", pessoa);
+
+    return 0;
+}
 ```

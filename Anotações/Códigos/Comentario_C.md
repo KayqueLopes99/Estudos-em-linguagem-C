@@ -8,13 +8,15 @@
   estes belísimos instrumentos que colaboram para o desenvolvimento do 
   nosso conhecimento.
 
-- "//" com duas barras podemos comentar em uma linha seguida apenas.
+- `//` com duas barras podemos comentar em uma linha seguida apenas.
 - Exemplo:
 // Este é um comentário de linha única.
 
 - "/* */" com barras e asteriscos podemons comentar quantas linhas desejar-mos.
 - Exemplo:
+````c
 /*
 Este é um comentário
 de várias linhas
 */
+````

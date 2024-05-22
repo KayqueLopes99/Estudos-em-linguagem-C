@@ -9,6 +9,7 @@
  de variáveis agrupadas sob um nome no seu respectivo um bloco de memória.
 
 - Sintaxe:
+```` c
 // Definir a estrutura
 struct <identificador_ou_novo_tipo> {
    <listagem dos tipos e membros>;
@@ -20,9 +21,10 @@ int main() {
     // ...
     return 0;
 }
-
+````
 
 - ## Exemplo de struct:
+```` c
  #include <stdio.h>
 struct ponto {
    float x, y;
@@ -36,7 +38,7 @@ int main(void) {
 
    return 0;
 }
-
+```` 
 ## Algumas observações:
 - %[^\n]: Usado na função scanf. A seu objetivo é lê a até encontrar um caractere (\n). Isso é útil quando vamos ler uma linha inteira de texto, incluindo espaços.
 - "->" : Usado para acessar membros de uma estrutura ou união através de um ponteiro.
@@ -46,16 +48,20 @@ int main(void) {
 - %2.f/%2.d : Usado no printf. Imprime um número, mas com pelo menos 2 dígitos preenchendo com zeros à esquerda caso precise. 
 
 # Funções com estruturas:
-- tipo_de_retorno nome_da_função (listagem de parâmetros) {
+- Sintaxe: 
+ ```` c
+ tipo_de_retorno nome_da_função (listagem de parâmetros) {
   informações;
   retorno_da_função;
 }
-- // Chamar no int main()
+// Chamar no int main()
 nome_da_função (listagem de parâmetros);
+
+```` 
 
 - As funções podem interagir com tipos estruturados de várias maneiras.
 - Por exemplo, uma função pode aceitar uma estrutura como um argumento. 
-
+```c
 #include <stdio.h>
 struct ponto{
 	float x, y;
@@ -76,3 +82,4 @@ int main(void){
 	return 0;
 }
 
+```

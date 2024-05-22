@@ -7,7 +7,7 @@
 . A condição se torna verdadeira se pelo menos um dos operandos for diferente de zero.
 - Sintaxe: `(operando_1 || operando_2)`
 - Exemplo: 
-- **OU lógico (||)**:
+- OU lógico (||):
 ```c
 #include <stdio.h>
 int main () {

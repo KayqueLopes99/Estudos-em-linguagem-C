@@ -1,28 +1,15 @@
-## Sequências de escape:
-
+# Sequências de escape:
 - Lista das sequências de escape:
-1. \\a:
+- \a:
 Alarme. Toca o alarme sonoro do sistema.
-2. \\b: 
-Retrocesso. Apaga o caractere à esquerda do cursor.
-3. \\n: 
+- \n: 
 Nova linha. Pula uma linha.
-4. \\t: 
+- \t: 
 Tabulação horizontal. Equivale à dar um TAB na string.
-5. \\r: 
-Retorno do Carro. Volta para o início da linha.
-6. \\0:
+- \0:
 Caractere nulo ou zero geralmente estabelecido como fim de string.
-7. \\v:
+- Usado em loop para percorrer até achar o final da frase(string)
+- \v:
 Tabulação Vertical.
-8. \\\\: 
-Caractere \\.
-9. \\':
-Caractere ‘.
-10. \\": 
-Caractere “.
-11. \\?: 
-Caractere ?.
-12. %%:
-Caractere %.
+
 
